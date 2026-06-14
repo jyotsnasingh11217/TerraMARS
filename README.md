@@ -84,7 +84,7 @@ If you use TerraMARS, please cite:
 ## Acknowledgements
 University of Arizona, Tucson, Arizona, USA
 
-This work used the Jetstream2 system at Indiana University through ACCESS allocation [ACCESS-XXXXX].
+This work used the Jetstream2 system at Indiana University.
 
 ## License
 
