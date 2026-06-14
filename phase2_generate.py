@@ -1,7 +1,19 @@
 """
 phase2_generate_v16.py
 ----------------------
-synthetic instruction tuning data generation.
+v1.6 synthetic instruction tuning data generation.
+
+CHANGES FROM v1.5:
+  - REMOVED: VERIFIED_VALUES reference block from all prompts.
+  - ADDED:   Explicit "use only chunk text" instruction.
+  - ADDED:   Strict schema enforcement for extraction template
+             (all 5 fields required with documented defaults).
+  - ADDED:   Sanity check rejects extraction outputs missing
+             any required field.
+
+KEEPS FROM v1.5:
+  Same 6 templates, same teacher (llama3.2:3b via Ollama),
+  same input chunks, same Alpaca output format.
 
 Output:
     data/training/v16_training_data.jsonl
@@ -43,6 +55,9 @@ EXTRACTION_REQUIRED_FIELDS = [
 
 random.seed(42)
 
+# ── Six templates (same as v1.5, schema tightened on extraction) ─────────────
+# IMPORTANT: NO scientific values are hard-coded in any template.
+# All numerical content comes from the chunk text only.
 
 EXTRACTION_INSTRUCTION = """Extract quantitative constraints from the TEXT below.
 
