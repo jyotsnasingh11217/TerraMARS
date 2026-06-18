@@ -75,7 +75,7 @@ If you use TerraMARS, please cite:
 ```bibtex
 @article{singh2026terramars,
   title  = {TerraMARS: A Domain-Adapted Small-Language-Model Pipeline for Mars Terraforming Literature},
-  author = {Singh, Jyotsna and Hu, Xiao and Black, Ash and Larsen, Jeff and Saleska, Scott},
+  author = {Singh, Jyotsna and Black, Ash and Larsen, Jeff and Saleska, Scott},
   year   = {2026}
 }
 ```
