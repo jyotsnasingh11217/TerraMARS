@@ -1,13 +1,7 @@
 """
 phase3_finetune.py
 ----------------------
-QLoRA fine-tuning of Gemma 3 1B IT on v1.6 clean training data.
-
-Same hyperparameters as v1.5. Only input and output paths
-change. v1.6 training data was generated with no verified-
-values reference block and strict schema enforcement (see
-phase2_generate_v16.py).
-
+QLoRA fine-tuning of Gemma 3 1B IT on clean training data.
 
 Output:
     output/v16_final_adapter/         trained QLoRA adapter
