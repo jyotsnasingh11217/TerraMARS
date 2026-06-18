@@ -1,7 +1,7 @@
 """
 phase4_sample_outputs.py
 ------------------------
-Generate sample outputs from the v1.6 fine-tuned model.
+Generate sample outputs from the fine-tuned model.
 
 This is NOT evaluation. These outputs are illustrative
 examples for the paper's "Case Studies" section,
